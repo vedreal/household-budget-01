@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HomeLedger — Household Budget for the Rivera Family</title>
+<meta name="description" content="HomeLedger: a plain, working household budget site for the Rivera family. Track spending, budgets, bills, savings goals and reports — all in the browser, no account needed.">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="brand">
+    <span class="brand-mark" aria-hidden="true">$</span>
+    <div>
+      <div class="brand-name">HomeLedger</div>
+      <div class="brand-sub">The Rivera family &middot; November 2026</div>
+    </div>
+  </div>
+  <nav class="mainnav" aria-label="Main navigation">
+    <a href="#/" data-route="">Dashboard</a>
+    <a href="#/transactions" data-route="transactions">Transactions</a>
+    <a href="#/budget" data-route="budget">Budget</a>
+    <a href="#/bills" data-route="bills">Bills</a>
+    <a href="#/goals" data-route="goals">Goals</a>
+    <a href="#/reports" data-route="reports">Reports</a>
+  </nav>
+</header>
+
+<main id="view" class="view" aria-live="polite"></main>
+
+<footer class="footer">
+  <p>HomeLedger keeps your data in this browser only — nothing leaves your device.</p>
+  <button id="reset-demo" type="button" class="btn btn-ghost">Reset demo data</button>
+</footer>
+
+<script src="js/format.js"></script>
+<script src="js/data.js"></script>
+<script src="js/charts.js"></script>
+<script src="js/views/dashboard.js"></script>
+<script src="js/views/transactions.js"></script>
+<script src="js/views/budget.js"></script>
+<script src="js/views/bills.js"></script>
+<script src="js/views/goals.js"></script>
+<script src="js/views/reports.js"></script>
+<script src="js/router.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
